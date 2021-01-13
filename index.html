@@ -1,74 +1,57 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178385458-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-178385458-1');
-    </script>
     <meta charset="UTF-8">
+    <meta lang="en">
     <title>AlexIsOK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <style>
-        #menu {
-            text-align: center;
-            color: white; /*changed with jquery*/
-            font-size: 1.7vw;
+        .block {
+            margin: 3vw 5px 3vw 3vw;
+            border-style: none;
+            display: inline-block;
+            max-width: 20vw;
         }
-        a {
-            text-decoration: none;
+        .main {
+            margin: 3vw;
+            display: block;
+            font-size: xx-large;
+        }
+        a.button-link {
+            text-decoration: #00000000;
+        }
+        .block > a {
             color: white;
-        }
-        .menuText {
-            color: white;
-            font-size: 3.0vh;
-        }
-        body {
-            background-color: black;
-            background-image: url("https://raw.githubusercontent.com/AlexIsOK/AlexIsOK.github.io/master/bg.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        #headerText3 {
-            color: white;
-            font-size: 12.0vh;
-        }
-        #headerText3 {
-            color: white;
-            font-size: 8.0vh;
-        }
-        .headerText4 {
-            color: white;
-            font-size: 5.0vh;
-        }
-        ::-webkit-scrollbar {
-            display: none;
+            text-underline: #FFFFFF;
         }
     </style>
-    
 </head>
-<body>
-<div id="menu">
-    <p class="menuText">
-        <a class="menuText" href="https://alexisok.dev/ub/discord.html" title="My Discord server">Discord</a> &nbsp;|&nbsp;
-<!--        <a class="menuText" href="https://alexisok.dev/projects.html" title="View my projects">Projects</a>  &nbsp;|&nbsp;-->
-        <a class="menuText" href="https://github.com/alexisok" title="My GitHub">GitHub</a> &nbsp;|&nbsp;
-        <a class="menuText" href="mailto:alex@alexisok.dev" title="Contact me">Contact</a> &nbsp;|&nbsp;
-        <a class="menuText" href="mailto:business@alexisok.dev" title="Contact me (super serious :eyes:)">Contact (business or legal)</a><br>
-        <a class="menuText" href="https://alexisok.dev/untitled-bot" title="My (cool?) Discord bot">untitled-bot</a>
-    </p>
+<!--roboto looks similar so it is a good backup font-->
+<body style="font-family: Ubuntu,Roboto,serif; background-color: #2C2F33; color: white;">
+<div class="main">
+    <h1><u>AlexIsOK</u></h1>
+    <br>
+    <ul>
+        <li>Email: <b>alex@alexisok.dev</b></li>
+        <li>Business: <b>business@alexisok.dev</b></li>
+    </ul>
+    <br>
+    <a href="https://github.com/alexisok" class="button-link">
+        <img class="gh-logo" src="res/github-logo.png" alt="GitHub">
+    </a>
+    <a href="https://discord.alexisok.dev/" class="button-link">
+        <img class="discord-logo" src="res/discord.png" alt="Discord">
+    </a>
 </div>
-<br><br><br>
-<div style="text-align: center;">
-    <h1 id="headerText3">AlexIsOK.dev</h1>
-    <p class="headerText4">A pretty cool site I guess</p><br><br>
+<div class="block">
+    <a class="block-link" href="https://untitled-bot.xyz"><h1>untitled-bot</h1></a>
+    <p>A Discord bot that does a lot of things.</p>
+</div>
+<div class="block">
+    <a class="block-link"><h1>WIP Things</h1></a>
+    <p>I am working on other projects which will show up here later.</p>
 </div>
 </body>
-<footer>
-
-</footer>
 </html>
